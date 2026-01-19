@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kids Zone</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="CSS/style.css">
+  <style>
+        .con {
+            padding-left: 70px;
+            font-family: sans-serif;
+
+        }
+
+        .headingmathgame {
+            color: rgb(235, 164, 176);
+            padding-left: 600px;
+        }
+
+        input {
+            background-color: rgb(162, 185, 134);
+             padding-left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="Images/Logo.jpeg" width="100" alt="">
+      <span class="fw-bold fs-4 ms-2"><h1><b>Kids Zone</b></h1>
+      </span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="Abc.html">A,B,C,..</a></li>
+            <li><a class="dropdown-item" href="123.html">1,2,3,..</a></li>
+            <li><a class="dropdown-item" href="alif,bay.html">ا ب پ</a></li>
+            <li><a class="dropdown-item" href="Tables.html">Tables</a></li>
+            <li><a class="dropdown-item" href="Animals.html">Animals</a></li>
+            <li><a class="dropdown-item" href="colors.html">Colors</a></li>
+            <li><a class="dropdown-item" href="Days.html">Days</a></li>
+            <li><a class="dropdown-item" href="months.html">Months</a></li>
+            <li><a class="dropdown-item" href="Vegetables.html">Vegetables</a></li>
+            <li><a class="dropdown-item active" href="addition.html">Addition/Subtraction</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="Contactus.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="con">
+        <h1 class="headingmathgame">Math Game..</h1>
+
+        <div id="question">1 + 2 = ?</div>
+        <input id="answer">
+        <button id="checkButton">Check</button>
+        <div id="result"></div>
+
+        <script>
+            var y = 1;
+            var t = 2;
+            var correctAnswer = y + t; // 1 + 2 = 3
+
+            document.getElementById("checkButton").onclick = function () {
+                var userAnswer = document.getElementById("answer").value;
+                if (userAnswer == correctAnswer) {
+                    document.getElementById("result").innerHTML = "Correct!";
+                } else {
+                    document.getElementById("result").innerHTML = "Wrong! The answer is " + correctAnswer;
+                }
+            }
+        </script>
+       <div id="q3">5 - 2 = ?</div>
+<input id="a3">
+<button id="b3">Check</button>
+<div id="r3"></div>
+
+<script>
+var p = 5;
+var q = 2;
+var ans3 = p - q;
+
+document.getElementById("b3").onclick = function() {
+    var val = document.getElementById("a3").value;
+    if (val == ans3) {
+        document.getElementById("r3").innerHTML = "Correct!";
+    } else {
+        document.getElementById("r3").innerHTML = "Wrong!";
+    }
+}
+</script>
+<div id="q2">3 + 4 = ?</div>
+<input id="a2">
+<button id="b2">Check</button>
+<div id="r2"></div>
+
+<script>
+var m = 3;
+var n = 4;
+var ans2 = m + n;
+
+document.getElementById("b2").onclick = function() {
+    var user = document.getElementById("a2").value;
+    if (user == ans2) {
+        document.getElementById("r2").innerHTML = "Correct!";
+    } else {
+        document.getElementById("r2").innerHTML = "Wrong!";
+    }
+}
+</script>
+<div id="q4">4 + 3 = ?</div>
+<input id="inp4">
+<button id="btn4">Check</button>
+<div id="res4"></div>
+
+<script>
+    var m = 4;
+    var n = 3;
+    var ans4 = m + n;
+
+    document.getElementById("btn4").onclick = function () {
+        var u4 = document.getElementById("inp4").value;
+
+        if (u4 == ans4) {
+            document.getElementById("res4").innerHTML = "Correct!";
+        } else {
+            document.getElementById("res4").innerHTML = "Wrong! Answer is " + ans4;
+        }
+    }
+</script>
+<div id="q6">6 + 2 = ?</div>
+<input id="inp6">
+<button id="btn6">Check</button>
+<div id="res6"></div>
+
+<script>
+    var c = 6;
+    var d = 2;
+    var ans6 = c + d;
+
+    document.getElementById("btn6").onclick = function () {
+        var u6 = document.getElementById("inp6").value;
+
+        if (u6 == ans6) {
+            document.getElementById("res6").innerHTML = "Correct!";
+        } else {
+            document.getElementById("res6").innerHTML = "Wrong! Answer is " + ans6;
+        }
+    }
+</script>
+<div id="q5">9 - 4 = ?</div>
+<input id="inp5">
+<button id="btn5">Check</button>
+<div id="res5"></div>
+
+<script>
+    var r = 9;
+    var s = 4;
+    var ans5 = r - s;
+
+    document.getElementById("btn5").onclick = function () {
+        var u5 = document.getElementById("inp5").value;
+
+        if (u5 == ans5) {
+            document.getElementById("res5").innerHTML = "Correct!";
+        } else {
+            document.getElementById("res5").innerHTML = "Wrong! Answer is " + ans5;
+        }
+    }
+</script>
+<div id="q8">10 - 3 = ?</div>
+<input id="inp8">
+<button id="btn8">Check</button>
+<div id="res8"></div>
+
+<script>
+    var cc = 10;
+    var dd = 3;
+    var ans8 = cc - dd;
+
+    document.getElementById("btn8").onclick = function () {
+        var u8 = document.getElementById("inp8").value;
+
+        if (u8 == ans8) {
+            document.getElementById("res8").innerHTML = "Correct!";
+        } else {
+            document.getElementById("res8").innerHTML = "Wrong! Answer is " + ans8;
+        }
+    }
+</script>
+<div id="q10">12 - 6 = ?</div>
+<input id="inp10">
+<button id="btn10">Check</button>
+<div id="res10"></div>
+
+<script>
+    var gg = 12;
+    var hh = 6;
+    var ans10 = gg - hh;
+
+    document.getElementById("btn10").onclick = function () {
+        var u10 = document.getElementById("inp10").value;
+
+        if (u10 == ans10) {
+            document.getElementById("res10").innerHTML = "Correct!";
+        } else {
+            document.getElementById("res10").innerHTML = "Wrong! Answer is " + ans10;
+        }
+    }
+</script>
+<div id="q9">7 + 5 = ?</div>
+<input id="inp9">
+<button id="btn9">Check</button>
+<div id="res9"></div>
+
+<script>
+    var ee = 7;
+    var ff = 5;
+    var ans9 = ee + ff;
+
+    document.getElementById("btn9").onclick = function () {
+        var u9 = document.getElementById("inp9").value;
+
+        if (u9 == ans9) {
+            document.getElementById("res9").innerHTML = "Correct!";
+        } else {
+            document.getElementById("res9").innerHTML = "Wrong! Answer is " + ans9;
+        }
+    }
+</script>
+ 
+    </div>
+     <!-- FOOTER -->
+<footer class="bg-dark text-light py-5">
+  <div class="container text-center">
+    <img src="Images/Logo.jpeg" width="80">
+    <h5 class="mt-3">Kids Zone</h5>
+    <p class="text-muted">Fun learning for kids</p>
+
+    <div class="fs-4">
+      <i class="fab fa-facebook mx-2"></i>
+      <i class="fab fa-instagram mx-2"></i>
+      <i class="fab fa-twitter mx-2"></i>
+      <i class="fab fa-tiktok mx-2"></i>
+    </div>
+
+    <p class="small text-muted mt-3">© 2026 Kids Zone</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

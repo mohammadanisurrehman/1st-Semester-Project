@@ -1,248 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>About Us - Kids Zone</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+ 
+  <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
-  <!-- NAV Bar -->
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <h1><i><u><img src="Images/Logo.jpeg" style="width: 150px;" alt="">KIDS ZONE</u></i></h1>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="About.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="Contactus.html">Contact us</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
+ <!-- NAVBAR  -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="Images/Logo.jpeg" width="100" alt="">
+      <span class="fw-bold fs-4 ms-2"><h1><b>Kids Zone</b></h1>
+      </span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="Abc.html">A,B,C,..</a></li>
+            <li><a class="dropdown-item" href="123.html">1,2,3,..</a></li>
+            <li><a class="dropdown-item" href="alif,bay.html">ا ب پ</a></li>
+            <li><a class="dropdown-item" href="Tables.html">Tables</a></li>
+            <li><a class="dropdown-item" href="Animals.html">Animals</a></li>
+            <li><a class="dropdown-item" href="colors.html">Colors</a></li>
+            <li><a class="dropdown-item" href="Days.html">Days</a></li>
+            <li><a class="dropdown-item" href="months.html">Months</a></li>
+            <li><a class="dropdown-item" href="Vegetables.html">Vegetables</a></li>
+            <li><a class="dropdown-item" href="addition.html">Addition/Subtraction</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link active" href="About.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="Contactus.html">Contact Us</a></li>
+      </ul>
     </div>
-  </nav>
-  <!DOCTYPE html>
-  <html>
-
-  <head>
-    <title>About Us - Kids Zone</title>
-    <style>
-      body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #fffaf0;
-        color: #333;
-        line-height: 1.6;
-      }
-
-      .hero-banner {
-        background: linear-gradient(to right, #ff7e5f, #feb47b, #ff7eb3, #8e44ad, #3498db);
-        padding: 60px 20px;
-        text-align: center;
-      }
-
-      .hero-banner h1 {
-        font-size: 65px;
-        margin: 0;
-        color: #000;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-      }
-
-      .container {
-        max-width: 1000px;
-        margin: 40px auto;
-        padding: 0 20px;
-      }
-
-      .section {
-        margin-bottom: 50px;
-        overflow: hidden;
-      }
-
-      .section-flex {
-        display: flex;
-        align-items: center;
-        gap: 40px;
-        margin-top: 20px;
-      }
-
-      .text-content {
-        flex: 1;
-      }
-
-      .image-content {
-        flex: 1;
-      }
-
-      .image-content img {
-        width: 100%;
-        border-radius: 20px;
-        box-shadow: 10px 10px 0px #ffcc00;
-      }
-
-      h2 {
-        font-size: 32px;
-        color: #2c3e50;
-        border-bottom: 4px solid #ff7eb3;
-        display: inline-block;
-        margin-bottom: 15px;
-      }
-
-      .vision-mission {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
-        margin-top: 40px;
-      }
-
-      .box {
-        padding: 30px;
-        border-radius: 15px;
-        color: white;
-      }
-
-      .vision-box {
-        background-color: #4facfe;
-      }
-
-      .mission-box {
-        background-color: #f093fb;
-      }
-
-      .future-section {
-        background-color: #ffffff;
-        padding: 40px;
-        border-radius: 25px;
-        border: 3px dashed #3498db;
-        text-align: center;
-      }
-
-      .team-list {
-        list-style: none;
-        padding: 0;
-        font-size: 20px;
-        font-weight: bold;
-        color: #e67e22;
-      }
-
-      .team-list li {
-        margin-bottom: 5px;
-      }
-    </style>
-  </head>
-
-  <body>
+  </div>
+</nav>
 
 
+<section class="about-heading">
+  <h1>About Us</h1>
+</section>
 
-    <div class="hero-banner">
-      <h1>About Us</h1>
-    </div>
-
-    <div class="container">
-      <div class="section">
-        <div class="section-flex">
-          <div class="text-content">
-            <h2>Kids Zone</h2>
-            <p>Welcome to the Fun Learning Hub for Kids! Our website is a colorful and engaging platform designed to
-              make learning fun and interactive for young children. Perfect for early learners, it offers a variety of
-              educational topics, including: ABC and 123 Learning, Animal Kingdom, Interactive Games, and Kid-Friendly
-              Design. This platform is a place where children can develop a love for learning through exploration and
-              creativity.</p>
-          </div>
-          <div class="image-content">
-            <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=500"
-              alt="Kids playing">
-          </div>
-        </div>
+<section class="about-section">
+  <div class="container">
+    <div class="about-row">
+      <div class="about-text">
+        <h2>Kids Zone</h2>
+        <p>
+          Welcome to Kids Zone — a fun and friendly learning hub created to make education exciting and enjoyable for young children. Our platform is designed to support early learning by using colorful visuals, simple explanations, and interactive content that keeps kids.
+          <br>
+          <br>
+        We focus on helping children learn basic concepts in an easy and playful way, so learning never feels boring or difficult. At Kids Zone, kids can explore new ideas, build strong learning foundations, and enjoy the process of learning while having fun in a safe and positive environment.
+        </p>
       </div>
 
-      <div class="vision-mission">
-        <div class="box vision-box">
-          <h3>Our Vision</h3>
-          <p>To become the world's most loved digital playground where education meets imagination, ensuring every child
-            has access to quality learning tools that feel like playtime.</p>
-        </div>
-        <div class="box mission-box">
-          <h3>Our Mission</h3>
-          <p>We aim to build a safe, bright, and noisy-in-a-good-way environment. Our mission is to simplify complex
-            early-childhood concepts through vibrant visuals and catchy interactions.</p>
-        </div>
-      </div>
-
-      <div class="section" style="margin-top: 60px;">
-        <div class="future-section">
-          <h2>The Future of Our Website</h2>
-          <p>We are just getting started! Soon, Kids Zone will feature Augmented Reality (AR) storybooks, live puppet
-            show videos, and a personalized progress dashboard for parents. We are working on adding multi-language
-            support so kids from all over the world can join the fun in their own native tongue.</p>
-        </div>
-      </div>
-
-      <div class="section">
-        <h2>Our Team</h2>
-        <ul class="team-list">
-          <li>M. Anis</li>
-          <li>Ghulam Rasool</li>
-        </ul>
-        <p>A duo of passionate creators dedicated to making the internet a better place for the next generation.</p>
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=500" alt="" style="width: 400px;">
       </div>
     </div>
 
-  </body>
+    <!-- VISION & MISSION -->
+    <div class="about-cards">
+      <div class="about-box vision-box">
+        <h3 style="text-align: center;">Our Vision</h3>
+        <p>
+          To become a trusted digital learning space where education feels like play,
+          helping children grow with curiosity and confidence.
+        </p>
+      </div>
 
-  </html>
-
-
-
-  <!-- footer -->
-  <footer>
-    <div class="row">
-      <div class="col">
-        <div class="footerlogo">
-          <h1><img src="Images/Logo.jpeg" style="width: 200px; margin-top: 100px;"></h1>
-          <h3 class="h11"><i>KIDS ZONE</i></h3>
-          <h6 class="footericons"><i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-tiktok"></i>
-          </h6>
-        </div>
+      <div class="about-box mission-box">
+        <h3 style="text-align: center;">Our Mission</h3>
+        <p>
+          To simplify early learning through visuals, creativity, and fun experiences
+          that keep kids engaged every day.
+        </p>
       </div>
     </div>
 
+    <!-- FUTURE -->
+    <div class="future-box">
+      <h2>The Future of Kids Zone</h2>
+      <p>
+        We are working on new features like interactive storybooks, educational games,
+        and multi-language support to make learning accessible for children everywhere.
+      </p>
+    </div>
 
-  </footer>
+    <!-- TEAM -->
+    <div class="team-section">
+      
+      <ul>
+        <h2><b>Our Team</b></h2>
+        <li>M. Anis</li>
+        <li>Ghulam Rasool</li>
+        <br>
+        <p>
+        A passionate team dedicated to building a safe and joyful learning experience
+        for kids.
+      </p>
+      </ul>
+      
+    </div>
 
+  </div>
+</section>
 
-  <!-- JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+<!-- FOOTER -->
+<footer class="bg-dark text-light py-5">
+  <div class="container text-center">
+    <img src="Images/Logo.jpeg" width="80">
+    <h5 class="mt-3">Kids Zone</h5>
+    <p class="text-muted">Fun learning for kids</p>
+
+    <div class="fs-4">
+      <i class="fab fa-facebook mx-2"></i>
+      <i class="fab fa-instagram mx-2"></i>
+      <i class="fab fa-twitter mx-2"></i>
+      <i class="fab fa-tiktok mx-2"></i>
+    </div>
+
+    <p class="small text-muted mt-3">© 2026 Kids Zone</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

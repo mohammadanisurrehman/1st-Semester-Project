@@ -1,69 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Contact Us - Kids Zone</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
-                               <!-- NAV Bar -->
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <h1><i><u><img src="Images/Logo.jpeg" style="width: 150px;" alt="">KIDS ZONE</u></i></h1>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="About.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="Contactus.html">Contact us</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="Images/Logo.jpeg" width="100" alt="">
+      <span class="fw-bold fs-4 ms-2"><h1><b>Kids Zone</b></h1>
+      </span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="Abc.html">A,B,C,..</a></li>
+            <li><a class="dropdown-item" href="123.html">1,2,3,..</a></li>
+            <li><a class="dropdown-item" href="alif,bay.html">ا ب پ</a></li>
+            <li><a class="dropdown-item" href="Tables.html">Tables</a></li>
+            <li><a class="dropdown-item" href="Animals.html">Animals</a></li>
+            <li><a class="dropdown-item" href="colors.html">Colors</a></li>
+            <li><a class="dropdown-item" href="Days.html">Days</a></li>
+            <li><a class="dropdown-item" href="months.html">Months</a></li>
+            <li><a class="dropdown-item" href="Vegetables.html">Vegetables</a></li>
+            <li><a class="dropdown-item" href="addition.html">Addition/Subtraction</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+        <li class="nav-item"><a class="nav-link active" href="Contactus.html">Contact Us</a></li>
+      </ul>
     </div>
-  </nav>
-   <!-- footer -->
-  <footer>
-    <div class="row">
-      <div class="col">
-        <div class="footerlogo">
-          <h1><img src="Images/Logo.jpeg" style="width: 200px; margin-top: 100px;"></h1>
-          <h3 class="h11"><i>KIDS ZONE</i></h3>
-          <h6 class="footericons"><i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-tiktok"></i></h6>
-        </div>
-      </div>
+  </div>
+</nav>
+
+<!-- PAGE HEADING -->
+<section class="contact-heading">
+  <h1>Contact Us</h1>
+</section>
+<b><p class="contact-desc">
+  We would love to hear from you! If you have any questions,<br> suggestions, or need help
+  with our learning content, feel free to contact us. <br>At Kids Zone, our mission is to
+  make learning fun, easy, and engaging for every child.
+</p></b>
+<!-- CONTACT SECTION -->
+<section class="contact-section">
+  <div class="contact-wrapper">
+
+
+    <!-- FORM -->
+    <div class="contact-box">
+      <h2>Get in Touch</h2>
+
+      <input type="text" placeholder="Enter your name">
+      <input type="email" placeholder="Enter your email">
+      <textarea placeholder="Enter your message"></textarea>
+
+      <button>Submit</button>
+
+      <h3>Email: kidslearn@gmail.com</h3>
     </div>
-  </footer>
 
+    <!-- IMAGE -->
+    <div class="contact-image">
+      <img src="Img/ChatGPT Image Dec 31, 2025, 05_39_06 PM.png" alt="">
+    </div>
 
+    <!-- MAP -->
+    <div class="contact-map">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.123456789!2d67.123456!3d24.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e123456789%3A0xabcdef123456789!2sKarachi%2C%20Pakistan!5e0!3m2!1sen!2s!4v1671234567890" 
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
 
+  </div>
+</section>
 
+<!-- NOTE -->
+<section class="note-section">
+  <div class="note-box">
+    <h2>Attention All Users</h2>
+    <p>
+      As we strive to provide the most seamless and high-quality experience for our
+      "Fun Learning for Kids" community, we welcome your feedback to improve our platform.
+    </p>
+  </div>
+</section>
 
-<!-- JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+<!-- FOOTER -->
+<footer class="bg-dark text-light py-5">
+  <div class="container text-center">
+    <img src="Images/Logo.jpeg" width="80">
+    <h5 class="mt-3">Kids Zone</h5>
+    <p class="text-muted">Fun learning for kids</p>
+
+    <div class="fs-4">
+      <i class="fab fa-facebook mx-2"></i>
+      <i class="fab fa-instagram mx-2"></i>
+      <i class="fab fa-twitter mx-2"></i>
+      <i class="fab fa-tiktok mx-2"></i>
+    </div>
+
+    <p class="small text-muted mt-3">© 2026 Kids Zone</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
