@@ -1,4 +1,12 @@
-.h11{
+/* ================= COMMON RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= HEADER / FOOTER ================= */
+.h11 {
     padding-left: 200px;
     margin-top: -80px;
 }
@@ -7,11 +15,23 @@
     margin-left: 700px;
     font-size: 30px;
 }
+html, body {
+  height: 100%;
+}
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+footer {
+  margin-top: auto;
+}
 
-   /* CONTACT PAGE */
+body {
+  font-family: 'Poppins', sans-serif;
+}
 
-
+/* ===== HEADING ===== */
 .contact-heading {
   background: linear-gradient(to right, #ff7e5f, #feb47b);
   padding: 30px 0;
@@ -20,25 +40,34 @@
 
 .contact-heading h1 {
   color: white;
-  font-size: 60px;
+  font-size: 48px;
   font-weight: 600;
   margin: 0;
 }
 
-/* Contact layout */
+/* ===== DESCRIPTION ===== */
+.contact-desc {
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+}
+
+/* ===== CONTACT SECTION ===== */
 .contact-section {
-  padding: 80px 20px;
+  padding: 40px 20px;
 }
 
 .contact-wrapper {
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 60px;
+  align-items: flex-start;
+  gap: 50px;
   flex-wrap: wrap;
 }
 
-/* Contact form box */
+/* ===== FORM ===== */
 .contact-box {
   background-color: #000;
   padding: 40px;
@@ -47,20 +76,11 @@
   border-radius: 16px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.2);
   text-align: center;
-  margin-left: 800px;
-  margin-top: -300px;
-  
 }
 
 .contact-box h2 {
   color: #ff4d4d;
   margin-bottom: 20px;
-}
-.contact-desc {
-  font-size: 18px;
-  color: #555;
-  margin-left: 100px;
-  margin-top: 300px;
 }
 
 .contact-box input,
@@ -100,13 +120,25 @@
   margin-top: 20px;
 }
 
-/* Image */
+/* ===== IMAGE ===== */
 .contact-image img {
-  max-width: 450px;
+  max-width: 400px;
   width: 100%;
 }
 
-/* Note */
+/* ===== MAP ===== */
+.contact-map {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* ===== NOTE ===== */
 .note-section {
   padding: 60px 20px;
 }
@@ -120,56 +152,39 @@
   text-align: center;
 }
 
-   /* CONTACT PAGE ADDITIONS */
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
 
+  .contact-heading h1 {
+    font-size: 36px;
+  }
 
-/* Map section */
-.contact-map {
-  margin-top: 40px;
-  width: 100%;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-}
-
-
-@media (max-width: 991px) {
   .contact-wrapper {
     flex-direction: column;
     align-items: center;
   }
 
-  .contact-box {
-    margin-left: 0;
+  .contact-image img {
+    max-width: 280px;
   }
 }
 
 
-   /* ABOUT PAGE */
-
-
+/* ================= ABOUT PAGE ================= */
 .about-heading {
   background: linear-gradient(to right, #ff7e5f, #feb47b);
   padding: 30px 0;
   text-align: center;
 }
-
 .about-heading h1 {
   color: white;
   font-size: 60px;
   font-weight: 600;
   margin: 0;
 }
-
-/* Main section */
 .about-section {
   padding: 80px 0;
 }
-
-/* Intro row */
 .about-row {
   display: flex;
   align-items: center;
@@ -177,51 +192,40 @@
   margin-bottom: 80px;
   flex-wrap: wrap;
 }
-
 .about-text {
   flex: 1;
 }
-
 .about-text h2 {
   font-size: 32px;
   margin-bottom: 15px;
 }
-
 .about-image {
   flex: 1;
 }
-
 .about-image img {
   width: 300px;
   border-radius: 20px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.15);
   margin-left: 200px;
 }
-
-/* Vision & Mission */
 .about-cards {
   display: flex;
   gap: 30px;
   margin-bottom: 80px;
   flex-wrap: wrap;
 }
-
 .about-box {
   flex: 1;
   padding: 30px;
   border-radius: 16px;
   color: white;
 }
-
 .vision-box {
   background-color: #4facfe;
 }
-
 .mission-box {
   background-color: #f093fb;
 }
-
-/* Future */
 .future-box {
   border: 2px dashed #0d6efd;
   padding: 40px;
@@ -229,40 +233,32 @@
   text-align: center;
   margin-bottom: 80px;
 }
-
-/* Team */
 .team-section ul {
   list-style: none;
   padding: 0;
   text-align: center;
 }
-
 .team-section li {
   font-weight: 600;
   font-size: 18px;
 }
- 
-   /* HOME - LEARNING SECTION */
- 
 
+/* ================= HOME - LEARNING ================= */
 .learning-section {
   padding: 80px 0;
   background-color: #f9f9f9;
 }
-
 .section-title {
   text-align: center;
   font-size: 42px;
   font-weight: 600;
 }
-
 .section-subtitle {
   text-align: center;
   color: #666;
   font-size: 18px;
   margin-top: 10px;
 }
-
 .learn-box {
   background: white;
   padding: 30px 20px;
@@ -270,62 +266,106 @@
   box-shadow: 0 6px 20px rgba(0,0,0,0.08);
   transition: 0.3s;
 }
-
 .learn-box:hover {
   transform: translateY(-5px);
 }
-
 .learn-box i {
   font-size: 40px;
   color: #0d6efd;
   margin-bottom: 15px;
 }
-
 .learn-box h4 {
   font-size: 22px;
   margin-bottom: 10px;
 }
-
 .learn-box p {
   color: #666;
   font-size: 15px;
 }
 
-   /* ABOUT LEARNING SECTION */
-
-
+/* ================= ABOUT LEARNING ================= */
 .about-learning {
   padding: 80px 0;
   background-color: #f9f9f9;
 }
-
 .about-flex {
   display: flex;
   align-items: center;
   gap: 50px;
   flex-wrap: wrap;
 }
-
 .about-text {
   flex: 1;
 }
-
 .about-text h2 {
   font-size: 36px;
   margin-bottom: 15px;
 }
-
 .about-text p {
   font-size: 16px;
   color: #555;
 }
-
 .about-image {
   flex: 1;
 }
-
 .about-image img {
   width: 100%;
+  max-width: 500px; /* ensures big images don't overflow */
   border-radius: 16px;
 }
 
+/* ================= SLIDER FIX ================= */
+.slider-img {
+  width: 100%;
+  height: auto;
+  max-height: 850px;
+  object-fit: cover;
+}
+
+/* ================= RESPONSIVE FIX ================= */
+@media (max-width: 991px) {
+  .contact-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-box {
+    margin-left: 0;
+  }
+  .about-image img {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 32px;
+  }
+  .footericons {
+    font-size: 26px;
+  }
+  .about-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-image img {
+    max-width: 100%;
+    width: 100% !important;
+  }
+}
+/* ================= VIDEO RESPONSIVE FIX ================= */
+.kids-video {
+  width: 100%;
+  max-width: 1000px;     /* Laptop par limit */
+  max-height: 70vh;      /* Screen ki height ka 70% */
+  height: auto;
+  display: block;
+  margin: 30px auto;
+  border-radius: 16px;
+  object-fit: contain;   /* Crop nahi hoga */
+}
+@media (max-width: 768px) {
+  .kids-video {
+    max-width: 100%;
+    max-height: 40vh;
+  }
+}
